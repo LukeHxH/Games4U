@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Games 4U</title>
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<script type="text/javascript" src="../javascript/scriptSlide.js"></script>
+		<meta charset="UTF-8"/>
+	</head>
+	<body onload="carregarImg()">
+		<div id="container">
+			<div id="cabecalho">
+				<h1>Games 4U</h1>
+				<h2>Passatempos divertidos!</h2>
+			</div>
+			<div id="menu">
+				<h1>Menu Principal</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="post2.html">Jogos</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="alunos.html">Alunos</a></li>
+				</ul>
+			</div>
+			<div id="contents">
+				<h1 class="especificacao">SITE DE JOGOS</h1>
+				<h2 class="autores">feito por Lucas de Medeiros e Moisés Oliveira</h2>
+				<div id="slide">
+					<div id="imgs">
+						<!-- Div para as imagens que serão exibidas no slideshow -->
+						<img id="img1" src="../images/imgslide1.jpg" href="101brasil.html"/>
+						<img id="img2" src="../images/imgslide2.jpg"/>
+						<img id="img3" src="../images/imgslide3.jpeg"/>
+					</div>
+					<div id="areasSlide">
+						<div id="up">
+							<div id="circulos">
+								<ul>
+									<!-- Botões que aparecem em cima do slide -->
+									<li id="l0" onclick="primeiraImagem()"></li>
+									<li id="l1" onclick="segundaImagem()"></li> 
+									<li id="l2" onclick="terceiraImagem()"></li> 
+								</ul>
+							</div>
+						</div>
+						<div id="middle">
+							<img id="esquerda" src="../images/setaEsquerda.png" style="width: 75px; height: 75px;" onclick="anterior()"/>
+							<img id="direita" src="../images/setaDireita.png" style="width: 75px; height: 75px;" onclick="proxima()"/>
+						</div>
+						<div id="bottom">
+							<p id="legenda0"><a href="1o1brasil.html">Jogue 1 on 1 Soccer Brasil!</a></p>
+							<p id="legenda1"><a href="incursion.html">Jogue Incursion!</a></p>
+							<p id="legenda2"><a href="troll.html">Jogue Trollface Quest!</a></p>
+						</div>
+					</div>
+				</div>
+				
+				<h2 class="enquete" align="center"><a class="linkEnquete" href="enquete.html">RESPONDA: QUAIS OS MELHORES JOGOS DO SITE?</a></h2>
+				
+				<hr/>
+				<h2 class="titulo"><a class="linkTitulo" href="post1.html">Por que jogar faz bem?</a></h2>
+				<p>O cérebro humano também é um músculo, e, assim como os demais músculos do corpo, necessita de exercícios para manter a forma, e não acabar ficando "obsoleto" ou "enferrujado".</p>
+				<p>Saiba que um ótimo exercício para a mente é <b>jogar games</b>!</p>
+				<p><b><i>"Ah, mas por que jogos seriam bons para a saúde do meu cérebro?"</i></b></p>
+				<p>Os jogos de videogame estimulam a atividade cerebral, melhorando a sua memória, seus reflexos, capacidade de raciocínio e até mesmo a tomar decisões importantes. Quando jogamos, o nosso cérebro é estimulado a pensar de forma mais prazerosa.</p>
+				<figure class="foto"> <!-- Definindo uma figure, que receberá uma imagem, com legenda (figcaption) -->
+					<img src="../images/video-game.jpg"/>
+					<figcaption>
+						<h3>Reprodução: <a href="http://canaltech.com.br/dica/games/conheca-seis-formas-de-ganhar-dinheiro-apenas-jogando-videogames/" style="color: cyan; text-decoration: none;" target="_blank">Canal Tech</a></h3>
+						<p><b>Homem jogando Video Game</b></p>
+					</figcaption>
+				</figure>
+				<p>Algumas vantagens são:</p>
+				<ol>
+					<li>Os jogos aliviam o stress e ajudam na visão;</li>
+					<li>Ajudam na constituição do caráter, e não, <b>jogos violentos não influenciam nas atitudes de uma pessoa</b>;</li>
+					<li>É possível até <b>perder peso</b> jogando, já que pode acabar sendo um estímulo para outros exercícios;</li>
+					<li>Comece a jogar neste site mesmo!</li>
+				</ol>
+				<p>Mas, sem excessos! Tudo que é feito de forma excessiva, acaba por prejudicar o ser humano.</p>
+				<p id="referencia">Fonte: <cite><a id="linkReferencia" href="http://canaltech.com.br/noticia/games/Estudo-comprova-jogar-videogame-faz-bem-ao-cerebro/" target="_blank">Canal Tech</a></cite></p> <!-- Citando um site que foi usado para pesquisa -->
+				<h2 class="titulo"><a class="linkTitulo" href="post2.html">Tabela dos jogos do site</a></h2> 
+				<table id="tabelaJogos"> <!-- Início da tabela -->
+					<caption>Jogos - Games 4U</caption>
+					<tr>
+						<th>Jogo</th>
+						<th>Gênero</th>
+						<th>Descrição</th>
+						<th>Imagem</th>
+					</tr>
+					<tr>
+						<td>1 on 1 Soccer</td>
+						<td>Esportes</td>
+						<td>Partidas de futebol simples e divertidas entre seleções.</td>
+						<td><img src="../images/1-on-1-soccer.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>1 on 1 Soccer Brasil</td>
+						<td>Esportes</td>
+						<td>É plena Copa do Mundo de 2014, realizada no Brasil! Dispute esse torneio, desafiando as seleções e desbloqueando jogadores a cada vitória!</td>
+						<td><img src="../images/1-on-1-soccer-brazil.gif" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Bob Esponja Delivery Dilemma</td>
+						<td>Plataforma</td>
+						<td>O Sr. Sirigueijo pede ao Bob Esponja para que traga os ingredientes do hambúrguer de siri. Ajude o Bob Esponja a entregar todos os ingredientes ao restaurante antes que o tempo termine e sem bater muito o veículo, desviando de diversos outros carros no trânsito e acelerando sempre que possível para chegar rapidamente.</td>
+						<td><img src="../images/spongebob.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Feudalism</td>
+						<td>RPG</td>
+						<td>Torne-se o grande imperador de uma terra que terá de ser dominada por sua força. Neste jogo, torne-se um mestre da arte da guerra!</td>
+						<td><img src="../images/feudalism.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Haunt the House</td>
+						<td>Aventura</td>
+						<td>Ajude esta entidade fantasmagórica e fofa (!) a assustar todos os invasores da casa, tomando cuidado para não fazê-los pular pela janela de tanto medo!</td>
+						<td><img src="../images/haunt.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Incursion 1</td>
+						<td>Tower Defense</td>
+						<td>Incursion é um jogo de estratégia, onde o reino da luz foi coberto pela escuridão, e a sua missão é defendê-lo contra os soldados inimigos. Você tem que treinar seus defensores e colocá-los em locais estratégicos ao longo da estrada para parar os ataques inimigos.</td>
+						<td><img src="../images/incursionImage1.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Incursion 2</td>
+						<td>Tower Defense</td>
+						<td>A legião das trevas continua seu ataque massivo sem dar trégua e, neste tempo difícil, um herói surgiu para liderar à todos. Defenda sua base com valentia e submeta as forças inimigas à derrota!</td>
+						<td><img src="../images/incursionImage2.jpeg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Planet Racers</td>
+						<td>Corrida</td>
+						<td>Corra, equipe, ganhe! Torne-se o novo rei do universo de Planet Racers desafiando outros corredores e ganhando reputação e dinheiro suficientes para desafiar o atual rei.</td>
+						<td><img src="../images/planet.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Trollface Quest</td>
+						<td>Comédia/Puzzle</td>
+						<td>Será que você consegue cumprir os desafios? ( ͡° ͜ʖ ͡°)</td>
+						<td><img src="../images/trollface.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+				</table> <!-- Fim da tabela -->
+				<p>Para acessar cada um desses jogos, basta ir no menu!</p>
+				<h2 class="enquete" align="center"><a class="linkEnquete" href="enquete.html">RESPONDA: QUAIS OS MELHORES JOGOS DO SITE?</a></h2>
+				<h2 class="titulo"><a class="linkTitulo" href="post3.html">História dos jogos eletrônicos</a></h2>
+				<p>Os jogos, hoje em dia desempenham um papel essencial de descontração na vida corrida de algumas pessoas, comumente estressadas por uma rotina desgastante.</p>
+				<p>A história dos jogos se inicia com uma criação engraçada de entreterimento, sem muito enfoque na época, criado em 1958 por um físico chamado William Higibotham, que entediado na base militar em que estava trabalhando, criou com um osciloscópio e um computador analógico o pequeno jogo que batizou de Tenis for Two, em português Tênis para Dois.</p>
+				<div align="center"> <!-- Usando um div para alinhar ao centro -->
+					<figure class="foto" style="width:60%"> <!-- Definindo uma figure, que receberá uma imagem, com legenda (figcaption) -->
+						<img src="../images/tenistwo.jpg"/>
+						<figcaption>
+							<h3>Reprodução: <a href="http://gavetadbagunca.blogspot.com.br/2014/07/a-origem-dos-jogos-eletronicos-primeira.html" style="color: cyan; text-decoration: none;" target="_blank">Gaveta de Bagunças</a></h3>
+							<p><b>Pessoas jogando Tenis Two</b></p>
+						</figcaption>
+					</figure>
+				</div>
+				<p>Mal imaginaria esse físico que sua invenção inspiraria um mundo de expansão de imaginação que junto à tecnologia pôde tornar possível a criação de um novo conceito de diversão e até mesmo de trabalho para o mundo, a criação dos games.</p>
+				<p>Os games só tiveram a evoluir com contribuições de cientistas que decidiram investir nessa área da tecnologia que se revelou promissora principalmente nos dias atuais com o grande aumento tanto de jogadores como de valorização do mercado de trabalho de profissionais aptos. Hoje as chances de ganhar dinheiro e reconhecimento nesse meio são muito possíveis principalmente para quem acompanha e gosta do meio e pretende se profissionalizar na área. </p>
+				<p id="referencia">Fonte: <cite><a id="linkReferencia" href="http://gavetadbagunca.blogspot.com.br/2014/07/a-origem-dos-jogos-eletronicos-primeira.html" target="_blank">Gaveta de Bagunças</a></cite></p> <!-- Citando um site que foi usado para pesquisa -->
+			</div>
+			<div id="lateral">
+				<h2>Nossos Jogos:</h2>
+				<ul>
+					<li>
+						<a id="menuLateral" class="seta topo" href="#">1 on 1 Soccer</a>
+						<ul class="nivel1">
+							<li><a id="menuLateral" class="topo" href="1o1s.html">1 on 1 Soccer</a></li>
+							<li><a id="menuLateral" class="bottom" href="1o1brasil.html">1 on 1 Soccer Brasil</a></li>
+						</ul>
+					</li>
+					<li><a id="menuLateral" href="bobesponja.html">Bob Esponja</a></li>
+					<li><a id="menuLateral" href="feudalism.html">Feudalism</a></li>
+					<li><a id="menuLateral" href="haunt.html">Haunt the House</a></li>
+					<li>
+						<a id="menuLateral" class="seta" href="#">Incursion</a>
+						<ul class="nivel1">
+							<li><a id="menuLateral" class="topo" href="incursion.html">Incursion 1</a></li>
+							<li><a id="menuLateral" class="bottom" href="incursion2.html">Incursion 2</a></li>
+						</ul>
+					</li>
+					<li><a id="menuLateral" href="planet_racers.html">Planet Racers</a></li>
+					<li><a id="menuLateral" href="troll.html" class="bottom">Trollface Quest</a></li>
+				</ul>
+				<br/>
+				<h2>Últimas postagens:</h2>
+				<div id="postagens">
+					<a id="linkPostagens" href="post1.html">Por que jogar faz bem?</a><br/><br/>
+					<a id="linkPostagens" href="post2.html">Tabela dos jogos do site</a><br/><br/>
+					<a id="linkPostagens" href="post3.html">História dos jogos eletrônicos</a>
+				</div>
+			</div>
+			<div id="rodape">
+				<p>Copyright &copy Games 4U - 2015</p>
+			</div>
+		</div>
+	<body>
+</html>

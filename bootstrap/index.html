@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="Lucas e Moisés" content="">
+
+        <title>Games4U</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/games4u.css" rel="stylesheet">
+
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            // Função para fazer a navbar descer quando o scroll for acionado
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('nav').outerHeight();
+
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+                
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+                
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('nav').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if(st + $(window).height() < $(document).height()) {
+                        $('nav').removeClass('nav-up');
+                    }
+                }
+                
+                lastScrollTop = st;
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top topnav nav-down" style="background-color: rgb(25,25,25);" role="navigation">
+            <div class="container topnav">
+
+                <a  name="inicio"></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="color: white;" class="navbar-brand topnav" href="index.html">GAMES 4U</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a style="color: white;" href="#">Início</a>
+                        </li>
+                        <li>
+                            <a style="color: white;" href="#services">Jogos</a>
+                        </li>
+                        <li>
+                            <a style="color: white;" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="intro-header">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>GAMES 4U</h1>
+                            <hr class="intro-divider">
+                            <h4>By: Lucas Medeiros e Moisés Oliveira</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    	<a  name="services"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">1 on 1 Soccer e<br>1 on 1 Soccer Brasil</h2>
+                        <p class="lead">Partidas de futebol simples e divertidas entre seleções.</p>
+                        <br/>
+                        <a href="1o1s.html">1 on 1 Soccer</a> &sdot;
+                        <a href="1o1sbr.html">1 on 1 Soccer Brasil</a>
+
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/1-on-1-soccer.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Bob Esponja Delivery Dilemma </h2>
+                        <p class="lead">O Sr. Sirigueijo pede ao Bob Esponja que traga os ingredientes do hambúrguer de siri. Ajude o Bob Esponja a entregar todos os ingredientes ao restaurante antes que o tempo termine e sem bater muito o veículo, desviando de diversos outros carros no trânsito e acelerando sempre que possível para chegar rapidamente. <br/>
+                        <a href="esponja.html">Jogue agora</a>!</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/esponja.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-section-a">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">The age of Feudalism</h2>
+                        <p class="lead">Torne-se o grande imperador de uma terra que terá de ser dominada por sua força. Neste jogo, torne-se um mestre da arte da guerra! <br>
+                        <a href="feudalism.html">Jogue agora</a>!</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/feudalism.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Haunt the House</h2>
+                        <p class="lead">Ajude esta entidade fantasmagórica e fofa (!) a assustar todos os invasores da casa, tomando cuidado para não fazê-los pular pela janela de tanto medo! <br/> 
+                        <a href="haunt.html">Jogue agora</a>!</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/haunt.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-section-a">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Incursion e Incursion 2</h2>
+                        <p class="lead">Incursion é um jogo de estratégia, onde o reino da luz foi coberto pela escuridão, e a sua missão é defendê-lo contra os soldados inimigos. Você tem que treinar seus defensores e colocá-los em locais estratégicos ao longo da estrada para parar os ataques inimigos. <br>
+                        <a href="incursion.html">Incursion</a> &sdot;
+                        <a href="incursion2.html">Incursion 2</a>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/incursion.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Trollface Quest</h2>
+                        <p class="lead">Será que você consegue cumprir os desafios? ( ͡° ͜ʖ ͡°) <br> 
+                        <a href="troll.html">Jogue agora</a>!</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/trollface.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    	<a  name="contact"></a>
+        <div class="banner">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Contato dos alunos:</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a target="_blank" href="https://facebook.com/lucas.pmm" class="btn btn-default btn-lg"><span class="network-name">Facebook Lucas</span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://facebook.com/moises.oliveira.3762584" class="btn btn-default btn-lg"> <span class="network-name">Facebook Moisés</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>  
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#services">Jogos</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#contact">Contato</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Games4U 2016. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

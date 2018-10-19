@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif); /* Importando uma fonte do Google Fonts, usando CSS3, requer acesso à internet */
+
+/* Início da formatação do corpo */
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 85% arial, hevetica, sans-serif; /* Definindo a fonte do body */
+	text-align: justify; /* Deixando o texto justificado */
+	color: #333; /* Definindo a cor do body */
+	background: #ccc; /* Definindo o plano de fundo do body */
+}
+/* Fim da formatação do corpo */
+/* Início da formatação do container */
+div#container {
+	width: 1000px;
+	background: #fff;
+	margin: 0px auto 0px auto;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* Definindo uma sombra ao container */
+}
+/* Fim da formatação do container */
+/*  Formatação do corpo da página */
+div#corpo {
+	margin-top: 0px
+	display: block;
+	width: 750px;
+	border: 1px solid #ccc; /* Definindo bordas */
+	border-radius: 10px 10px 10px 10px; /* Definindo bordas arredondadas */
+	float: right; /* Faz o corpo da página ser mostrado no lado direito */
+	padding: 15px;
+	margin-bottom: 10px;
+}
+/* Fim da formatação do corpo da página */
+/* Formatação da lateral */
+div#lateral {
+	display: block; /* Faz a lateral da página ser tratado como um bloco */
+	margin-top: 0px;
+	width: 180px;
+	height: 400px;
+	padding: 12px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	float: left; /* Faz a lateral da página ser mostrada no lado direito */
+}
+
+div#lateral ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 12pt;
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 2px 2px 0px rgba(0,0,0,.5); /* Definindo uma sombra */
+}
+
+div#lateral ul li {
+	position: relative;
+	text-align: center;
+}
+
+div#lateral li ul {
+	display: none;
+	position: absolute;
+	left: 269px;
+	top: -2px;
+}
+
+div#lateral ul li a {
+	display: block;
+	text-decoration: none;
+	color: #DCDCDC;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #8B8682;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	transition: background-color 0.5s; /* Aplica uma transição, quando o mouse é passado por cima do link */
+}
+
+div#lateral a:hover {
+	color: white;
+	background: black;
+}
+
+div#lateral a.seta {
+	background-image: url("../images/voltar.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+/* Fim da formatação da lateral da página */
+/* Formatação do rodapé */
+div#rodape {
+	margin-top: 10px;
+	clear: both; /* Faz com que o conteúdo do rodapé não seja mostrado na divisão do corpo e da lateral, e sim no final da página */
+	background-color: rgba(0,0,0,.8);
+	width: 100%;
+	height: 20px;
+	border-top: 1px solid #ccc;
+}
+
+div#rodape p {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+	padding: 1px;
+	text-indent: 0px;
+}
+/* Fim da formatação do rodapé */
+
+/* Formatação para o iframe contido na página*/
+iframe#framePage {
+	margin: 0px;
+	padding: 0px;
+	width: 750px;
+	height: 40px;
+	border: none;
+}
+/* Fim da formatação para o iframe contido na página */
+
+/* A partir daqui, está escrito o CSS do formulário de enquete */
+
+div.divFormulario, .submit, .submit:before, .submit:after, .reset, .reset:before, .reset:after { /* Colocando a cor no plano de fundo */
+  background: url("../images/bg.png") 0 0 repeat; /* Definindo o plano de fundo a partir de uma imagem */
+}
+
+div.divFormulario { /* Alterando o estilo do div */
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	position: relative;
+	margin: 0px auto;
+	width: 350px;
+	padding-right: 32px;
+	padding-left:15px;
+	padding-bottom:35px;
+	font-weight: 300;
+	color: #fff;
+	border-radius: 10px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+	border: 3px solid rgba(0,0,0,0.2);
+}
+
+div.divFormulario p {
+	font-family: 'Bree Serif', serif; /* Aplicando a fonte "Bree Serif", importada do Google Fonts */
+	font-size: 15pt;
+	text-align: center;
+}
+
+textarea {
+	padding: 10px;
+	color: #bbb;
+	background: rgba(0, 0, 0, 0.3);
+	border: 0;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.3); /* Definindo uma sombra estilizada */
+}
+
+textarea:focus {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	outline: 0;
+}
+
+/* Estilização dos botões de submit e reset */
+
+.submit { /* Formatação do campo em que o botão de submit está inserido */
+    position: absolute;
+    top: 175px;
+    right: 0px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px; /* Definindo uma borda arredondada ao campo do botão */
+}
+
+.reset { /* Formatação do campo em que o botão de reset está inserido */
+    position: absolute;
+    top: 175px;
+    right: 330px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px; /* Definindo uma borda arredondada ao campo do botão */
+}
+
+.buttonSubmit {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    text-indent: 120%;
+    background: none;
+    border: 0;
+    border-radius: 24px; /* Definindo uma borda arredondada ao botão */
+    cursor: pointer; /* Alterando o cursor do mouse ao passar por cima */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1); /* Definindo uma sombra estilizada ao botão */
+}
+
+.buttonReset {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    text-indent: 120%;
+    background: none;
+    border: 0;
+    border-radius: 24px; /* Definindo uma borda arredondada ao botão */
+    cursor: pointer; /* Alterando o cursor do mouse ao passar por cima */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1); /* Definindo uma sombra estilizada ao botão */
+}
+
+/* Utilização de before and after para adicionar pseudo elementos html apenas usando CSS */
+
+.buttonSubmit:before { /* Editando o espaçamento das laterais do botão de submeter (antes) */
+    content: ''; /* Propriedade que permite o uso do "before" e "after" */
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: #00a2d3;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom, #00a2d3, #0d7796); /* Definindo um plano de fundo em degradé */
+    box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16); /* Definindo uma sombra estilizada para o fundo */
+}
+
+.buttonReset:before { /* Editando o espaçamento das laterais do botão de reset (antes) */
+    content: ''; /* Propriedade que permite o uso do "before" e "after" */
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: #94120d;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom, #94120d, #d11500); /* Definindo um plano de fundo em degradé */
+   	box-shadow: inset 0 0 0 1px #94120d, 0 0 0 5px rgba(0, 0, 0, 0.16); /* Definindo uma sombra estilizada para o fundo */
+}
+
+.buttonSubmit:active:before {
+    background: #0591ba;
+    background-image: linear-gradient(to bottom, #0591ba, #00a2d3); /* Definindo um plano de fundo em degradé */
+}
+
+.buttonReset:active:before {
+    background: #d11500;
+    background-image: linear-gradient(to bottom, #d11500, #94120d); /* Definindo um plano de fundo em degradé */
+}
+
+.buttonSubmit:focus, .buttonReset:focus {
+	outline: 0;
+}
+
+.buttonSubmit:after { /* Pondo a imagem de seta centralizada no botão de submeter */
+    content: ''; /* Propriedade que permite o uso do "before" e "after" */
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 25px;
+    height: 19px;
+    background: url("../images/arrow.png") 0 0 no-repeat;
+}
+
+.buttonReset:after { /* Pondo a imagem do x centralizado no botão de reset */
+	content: ''; /* Propriedade que permite o uso do "before" e "after" */
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/clear.png") 0 0 no-repeat;
+}
+
+#msg { /* Formatação da parte do span que se localiza no fim do formulário, onde serão exibidas as mensagens de erro */
+	position: absolute; /* Definindo-o como absolute para uma melhor manipulação (com top, right, etc) */
+	padding: 5px;
+    top: 260px; /* Definindo o top */
+    right: 43px; /* Definindo o right */
+    width: 300px; /* Definindo a largura */
+    height: 18px; /* Definindo a altura */
+	color: white;
+	font-weight: bold;
+	background: rgba(10,0,0,0.1); /* Colocando um plano de fundo transparente */
+	text-align: center;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.3); /* Definindo uma sombra interna estilizada */
+}
+/* Fim da formatação do formulário da página */
+
+table#tabelaJogos { /* Formatação CSS3 da tabela dos jogos */
+	border: 2px solid #606060;
+	width: 100%;
+	border-spacing: 0px; /* Os espaços entre as bordas da tabela é 0 */
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaJogos th { /* Formatação dos th da tabela */
+	padding: 5px;
+	background-color: #606060;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15pt;
+}
+
+table#tabelaJogos td { /* Formatação dos td da tabela */
+	padding: 10px;
+	background-color: #cecece;
+}
+
+table#tabelaJogos caption {
+	color: #778899;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+	margin-bottom: 2px;
+	font-size: 12pt;
+	text-transform: uppercase;
+	font-weight: bold;
+}

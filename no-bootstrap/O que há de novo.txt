@@ -1,0 +1,11 @@
+O QUE HÁ DE NOVO?
+
+Em relação ao trabalho do segundo bimestre, as alterações com JavaScript feitas foram as seguintes:
+
+* Uso de JS para validação de formulários localizados nas páginas correspondentes aos jogos do site e no formulário para escolher
+o melhor jogo do site;
+* Uso de CSS para estilizar os formulários;
+*Uso de JavaScript e CSS para fazer um slideshow para a página
+
+Componentes: Lucas de Medeiros Nunes Fernandes
+			Moisés Oliveira Catônio de Araújo

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="Lucas e Moisés" content="">
+	    <title>The Age of Feudalism | Games 4U</title>
+
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	    <link href="css/games4u.css" rel="stylesheet">
+
+	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            // Função para fazer a navbar descer quando o scroll for acionado
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('nav').outerHeight();
+
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+                
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+                
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('nav').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if(st + $(window).height() < $(document).height()) {
+                        $('nav').removeClass('nav-up');
+                    }
+                }
+                
+                lastScrollTop = st;
+            }
+        </script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top topnav" style="background-color: rgb(25,25,25);" role="navigation">
+			<div class="container topnav">
+
+                <a  name="inicio"></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="color: white;" class="navbar-brand topnav" href="index.html">Voltar</a>
+                </div>
+            </div>
+		</nav>
+
+		<div class="intro-header" style="background: url(img/feudalism-bg.jpg) no-repeat center center;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message" style="padding-top: 0%; padding-bottom: 0%;">
+                            <embed src="swfs/Feudalism.swf" width="700" height="550" wmode="transparent"/>
+                            <h3>Descrição:</h3>
+                            <hr class="intro-divider" style="width: 700px;">
+                            <h4>Torne-se o grande imperador de uma terra que terá de ser dominada por sua força. Neste jogo, torne-se um mestre da arte da guerra!</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" align="center">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading" style="padding-bottom: 0px; margin-bottom: 0px;">COMO JOGAR</h2>
+                        <hr style="border-top: 1px solid #ccc;">
+                        <table style="width: 400px;">
+                            <tr>
+                                <td style="text-align: center;"><img src="img/setas.png"/></td>
+                                <td style="text-align: center;">Faz com que o jogador se movimente</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><img src="img/spacebar.png"/>
+                                <td style="text-align: center;">Ataque</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><img src="img/shift.png"/>
+                                <td style="text-align: center;">Troca de Arma</td>
+                            </tr>
+                        </table>
+                        <hr style="border-top: 1px solid #ccc;">
+                        <div id="divForm">
+                            <h3>O QUE ACHOU DESTE JOGO?</h3>
+                            <form id="formulario" action="submetido.php" name="formulario" method="post" onsubmit="return validar()">
+                                <table align="center" style="padding: 5px;">
+                                    <tr>
+                                        <td><input type="radio" name="op" id="check1" value='T' checked />
+                                        <label for="check1" class="labelCheck">Terrível</label></td>
+
+                                        <td><input type="radio" name="op" id="check2" value='R' />
+                                        <label for="check2" class="labelCheck">Razoável</label></td>
+
+                                        <td><input type="radio" name="op" id="check3" value='B' />
+                                        <label for="check3" class="labelCheck">Bom</label></td>
+
+                                        <td><input type="radio" name="op" id="check4" value='O' />
+                                        <label for="check4" class="labelCheck">Ótimo</label></td>
+                                        <input type="hidden" name="jogo" value="feudalism" />
+                                    </tr>
+                                    <tfoot>
+                                        <tr>
+                                            <td style="text-align: center;" colspan="4">
+                                                <button class="btn btn-primary btn-lg btn-block" style="background-color: rgba(0,0,0,0.8); border-color: #ccc;">ENVIAR</button><br/>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="index.html#services">Jogos</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="index.html#contact">Contato</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Games4U 2016. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

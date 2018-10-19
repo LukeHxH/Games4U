@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bob Esponja Delivery Dilemma</title>
+		<link rel="stylesheet" type="text/css" href="../css/estilojogos.css"/>
+		<script type="text/javascript" src="../javascript/scriptJogos.js"></script>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="jogo">
+				<table id="tableDicas" align="center">
+					<tr>
+						<td id="dicas" colspan="2">COMO JOGAR</td>
+					</tr>
+					<tr>
+						<td class="imagem"><img src="../images/setas.png"/>
+						<td class="descricao">Movimenta o personagem</td>
+					</tr>
+					<tr>
+						<td class="imagem"><img src="../images/spacebar.png"/>
+						<td class="descricao">Usa os especiais</td>
+					</tr>
+				</table>
+				<div id="divIframe">
+					<iframe name="framePage" id="framePage" scrolling="no" src=""></iframe>
+				</div>
+				<div id="divForm">
+					<p id="titleForm">O QUE ACHOU DESTE JOGO?</p>
+					<form id="formulario" target="framePage" action="submetido.html" name="formulario" method="post" onsubmit="return validar()">
+						<table align="center" style="padding: 5px;">
+							<tr>
+								<td><input type="radio" name="op" id="check1" value='T' />
+								<label for="check1" class="labelCheck">Terrível</label></td>
+
+								<td><input type="radio" name="op" id="check2" value='R' />
+								<label for="check2" class="labelCheck">Razoável</label></td>
+
+								<td><input type="radio" name="op" id="check3" value='B' />
+								<label for="check3" class="labelCheck">Bom</label></td>
+
+								<td><input type="radio" name="op" id="check4" value='O' />
+								<label for="check4" class="labelCheck">Ótimo</label></td>
+							</tr>
+							<tfoot>
+								<tr>
+									<td style="text-align: center;" colspan="4">
+										<input type="submit" value="Enviar" /><br/>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+				<embed src="../swfs/bobesponja.swf" width="750" height="600" wmode="transparent"/>
+			</div>
+			<div id="lateral">
+				<ul>
+					<li><a class="seta" href="index.html">Home Page</a></li>
+				</ul>
+			</div>
+			<div id="rodape"> <!-- Tag "footer" usada para definir o rodapé na página -->
+				<p>Copyright &copy Games 4U - 2015</p>
+			</div>
+		<div>
+	</body>
+</html>

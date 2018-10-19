@@ -1,0 +1,498 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif); /* Importando uma fonte do Google Fonts, usando CSS3, requer acesso à internet */
+@import url(https://fonts.googleapis.com/css?family=Oswald); /* Importando uma fonte do Google Fonts, usando CSS3, requer acesso à internet */
+@import url(https://fonts.googleapis.com/css?family=Poiret+One); /* Importando uma fonte do Google Fonts, usando CSS3, requer acesso à internet */
+/* Formatação do body */
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 85% arial, hevetica, sans-serif; /* Definindo a fonte do body */
+	text-align: justify; /* Deixando o texto justificado */
+	color: #333; /* Definindo a cor do texto body */
+	background: #ccc; /* Definindo o plano de fundo do body */
+}
+/* Fim da formatação do body */
+/* Fomatação do p (parágrafo) */
+p {
+	text-align: justify; /* Alinhando o texto como justificado */
+	text-indent: 25px; /* Definindo um espaçamento na primeira linha do parágrafo */
+}
+/* Fim da fomatação do p (parágrafo) */
+/* Formatação das imagens que serão utilizadas nas postagens da página inicial  */
+figure.foto { /* Alterando a formatação do figure, que foi definido para conter uma imagem */
+	position: relative;
+	border: 3px solid white; /* Definindo uma borda */
+	box-shadow: 1px 1px 4px black; /* Definindo uma sombra */
+}
+
+figure.foto img {
+	width: 100%;
+	height: 100%; /* Fazendo a imagem ocupar 100% do figure, para não ficar transpassando a borda */
+}
+
+figure.foto figcaption { /* Formatando a legenda da foto */
+	opacity: 0; /* Faz com que a figcaption não apareça */
+	position: absolute;
+	top: 0px;
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box; /* Para o fundo preto transparente da legenda não transpassar a borda */
+	transition: all 0.5s; /* Fazendo uma pequena transição, para deixar mais elegante */
+}
+
+figure.foto:hover figcaption { /* Fazendo a legenda da foto aparecer apenas quando o mouse passar por cima */
+	opacity: 1; /* Faz com que a figcaption apareça quando passar o mouse por cima */
+	background-color: rgba(0,0,0,.4); /* Definindo um fundo transparente para a legenda */
+}
+/* Fim da formatação das imagens que serão utilizadas nas postagens da página inicial  */
+/* Formatação do container */
+div#container {
+	width: 1100px;
+	background: #fff;
+	margin: 0px auto 0px auto;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* Definindo uma sombra ao container */
+}
+/* Fim da formatação do container */
+/* Formatação do cabeçalho */
+div#cabecalho {
+	background: linear-gradient(270deg, #FFFFFF, #8B8989); /* Definindo um background em dégradé */
+	margin-bottom: 10px;
+	height: 100px;
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border: 1px solid #ccc;
+	border-radius: 10px 10px 10px 10px; /* Definindo bordas arredondadas */
+}
+
+div#cabecalho h1 {
+	font-family: 'Bree Serif', serif; /* Aplicando a fonte "Bree Serif", importada do Google Fonts */
+	text-transform: uppercase;
+	color: #686868;
+	font-size: 50pt;
+	padding: 0px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.8); /* Definindo uma sombra ao texto */
+}
+
+div#cabecalho h2 {
+	font-family: Hevetica, sans-serif;/* Definindo a fonte 'Hevetica' ao texto */
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* Definindo uma sombra ao texto */
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 37px;
+}
+/* Fim da formatação do cabeçalho */
+/* Formatação do menu */
+div#menu {
+	display: block; /* Definindo o menu como um bloco */
+}
+
+div#menu ul {
+	list-style: none; /* Tirando os marcadores de lista do ul */
+	text-transform: uppercase; /* Fazendo o texto ficar em letras MAIÚSCULAS */
+	position: absolute; /* Definindo a posição como absoluta */
+	top: 5px;
+	left: 550px;
+	padding: 10px;
+}
+
+div#menu li {
+	display: inline-block; /* Faz com que o menu fique "deitado" em sua disposição */
+	font-family: 'Oswald', sans-serif; /* Aplicando a fonte "Oswald", importada do Google Fonts */
+	font-size: 20pt;
+	margin: 5px;
+}
+
+div#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #8B8989;
+	text-shadow: 1px 1px 1px #664;
+	transition: background-color 0.5s; /* Aplica uma transição, quando o mouse é passado por cima do link */
+	padding: 0px 40px 0px 40px;
+	border-radius: 10px 10px 10px 10px; /* Definindo uma borda arredondada */
+}
+
+div#menu h1 { /* Fazendo com que o h1 do menu flutuante na tela não seja visível na página  */
+	display: none;
+}
+
+div#menu a:hover {
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
+}
+
+div#menu a:active {
+	background-color: black;
+	color: red;
+	text-shadow: 0px 0px 0px #664;
+}
+/* Fim da formatação do menu */
+/* Formatação do corpo da página - contents */
+div#contents {
+	margin-top: 0px
+	display: block;
+	width: 760px;
+	border: 1px solid #ccc; /* Definindo bordas */
+	float: right; /* Faz a lateral da página ser mostrado no lado direito */
+	border-radius: 10px 10px 10px 10px; /* Definindo uma borda arredondada */
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+div#contents h1.especificacao {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #606060;
+	font-family: 'Oswald', sans-serif; /* Aplicando a fonte "Oswald", importada do Google Fonts */
+}
+
+div#contents h2.autores {
+	color: #D3D3D3;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 10pt;
+	font-style: bold;
+	font-family: 'Oswald', sans-serif; /* Aplicando a fonte "Oswald", importada do Google Fonts */
+}
+/* Formatação do slideshow exibido na página inicial */
+#imgs img {
+    width: 520px;
+    height: 240px;
+    position: absolute;
+    top: 240px; /* Definindo a posição em que o slideshow se encontrará na página */
+    left: 580px;
+    transition: 1s; /* Definindo uma transição para deixar elegante */
+    visibility: hidden;
+    border-radius: 10px; /* Definindo uma borda arredondada */
+}
+
+#areasSlide {
+    display: block;
+    width: 520px;
+    height: 240px;
+    position: absolute; /* Definindo posição absoluta ao div em que as áreas do slideshow vão se encontrar */
+    top: 240px;
+    left: 580px;
+}
+/* Onde os círculos da página estarão localizados (área 'up', ou seja, de cima do slide) */
+#up {
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+#circulos {
+    display: block;
+    width: 10%;
+    height: 25%;
+    margin-right: 5%;
+    margin-top: 2%;
+    float: right;        /* Fazendo se localizar na parte direita do slide */
+}
+
+#circulos ul {
+    margin: 0;
+    float: right;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#circulos li {
+    list-style:none;
+    /* Tirando o estilo, já que não irá ser necessário */
+    display:block;
+    /* Fazendo o li se comportar como um block */
+    width:25%;
+    height:90%;
+    margin-left:5%;
+    /* Definindo uma margem */
+    float:left;     /*Fazendo ficar na mesma linha*/
+    visibility:hidden;
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+    cursor: pointer; /* Fazendo o cursor do mouse mudar quando passar por cima */
+}
+
+#middle {
+	/* Personalizando a parte central do slideshow */
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;
+}
+/* botão esquerdo */
+#esquerda {
+    width: 4%;
+    height: 100%;
+    float: left;
+    margin-left: 3%;
+    cursor: pointer; /* Fazendo o cursor do mouse mudar quando passar por cima */
+    transition: 0.3s;
+}
+/* Efeito do botão */
+#esquerda:hover {
+    opacity: 0.5;
+}
+#direita {
+    width: 8%;
+    height: 100%;
+    float: right;
+    margin-right: 3%;
+    cursor: pointer; /* Fazendo o cursor do mouse mudar quando passar por cima */
+    transition: opacity 0.1s;
+}
+#direita:hover {
+    opacity: 0.5;
+}
+/* Final do slide (bottom) */
+#bottom {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 10px 10px
+}
+#bottom p { /* Formatação da legenda da imagem */
+    font: normal 200% Arial;
+    color: #fff;
+    position: absolute;
+    bottom: -10px;
+    margin-left: 3%;
+    visibility: hidden;
+}
+
+#bottom a { /* Formatação do link do slide para redirecionar para a página do jogo */
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+#bottom a:hover {
+	color: white;
+	text-decoration: underline; /* Definindo linhas em cima e em baixo ao passar o mouse por cima */
+}
+/* Fim da formatação do slideshow exibido na página inicial */
+/* Formatação do link para o redirecionamento para a enquete */
+.enquete {
+	margin-bottom: 260px;
+}
+.enquete a { 
+	color: #ff0000;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.enquete a:hover {
+	color: rgba(0, 0, 0, .5);
+	text-decoration: underline overline; /* Definindo linhas em cima e em baixo ao passar o mouse por cima */
+	font-size: 70%;
+}
+/* Fim d formatação do link para o redirecionamento para a enquete */
+div#contents h2.titulo {
+	color: white;
+	font-size: 25pt;
+	text-align: center;
+	background-color: rgba(0,0,0,.8);
+	font-family: 'Poiret One', cursive; /* Aplicando a fonte "Poiret One", importada do Google Fonts */
+	box-shadow: 3px 3px 3px rgba(0,0,0,1); /* Aplicando sombra transparente, usando o rgba */
+	text-transform: uppercase;
+}
+
+a.linkTitulo { /* Estilizando o link dos títulos de postagem */
+	color: white;
+	text-decoration: none;
+}
+
+a.linkTitulo:hover { /* Quando o usuário passar o mouse sobre o link, ele mudará de cor */
+	color: #838383;
+}
+
+p#referencia { /* Alinhando um único parágrafo */
+	text-align: right;
+}
+
+a#linkReferencia { /* Alinhando todos os links que forem usados dentro do texto para referenciar algum site */
+	color: #4682B4;
+	text-decoration: none;
+}
+
+a#linkReferencia:active {
+	color: red;
+}
+
+a#linkReferencia:hover {
+	text-decoration: underline;
+}
+
+table#tabelaJogos { /* Formatação CSS3 da tabela dos jogos */
+	border: 2px solid #606060;
+	width: 100%;
+	border-spacing: 0px; /* Os espaços entre as bordas da tabela é 0 */
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaJogos th { /* Formatação dos th da tabela */
+	padding: 5px;
+	background-color: #606060;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15pt;
+}
+
+table#tabelaJogos td { /* Formatação dos td da tabela */
+	padding: 10px;
+	background-color: #cecece;
+}
+
+table#tabelaJogos caption {
+	color: #778899;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+	margin-bottom: 2px;
+	font-size: 12pt;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* Fim da formatação do corpo da página */
+/* Fomatação da lateral da página */
+div#lateral {
+	display: block;
+	margin-top: 0px;
+	width: 270px;
+	background: #CDCDC1;
+	text-align: center;
+	padding: 12px;
+	margin-bottom: 10px;
+	float: left; /* Faz a lateral da página ser mostrada no lado esquerdo */
+	border-radius: 0px 0px 20px 20px; /* Define uma borda arredondada apenas na parte de baixo */
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5); /* Definindo uma sombra */
+}
+
+div#lateral h2 {
+	color: white;
+	font-size: 15pt;
+	background-color: rgba(0,0,0,.7);
+	font-family: 'Oswald', cursive; /* Aplicando a fonte "Poiret One", importada do Google Fonts */
+	text-transform: uppercase;
+	box-shadow: 3px 3px 4px rgba(0,0,0,.6); /* Aplicando sombra transparente, usando o rgba */
+}
+
+div#lateral ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 12pt;
+	background: #8B8682;
+	border: 1px solid #8B8682;
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 2px 2px 0px rgba(0,0,0,.5); /* Definindo uma sombra */
+}
+
+div#lateral ul li {
+	position: relative;
+}
+
+div#lateral li ul {
+	display: none;
+	position: absolute;
+	left: 269px;
+	top: -2px;
+}
+
+div#lateral li:hover ul.nivel1 {
+	display: block;
+	width: 220px;
+}
+
+div#lateral ul li a#menuLateral {
+	display: block;
+	border-bottom: 1px solid white;
+	text-decoration: none;
+	color: #DCDCDC;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #8B8682;
+	padding: 10px;
+	transition: background-color 0.5s; /* Aplica uma transição, quando o mouse é passado por cima do link */
+}
+
+div#lateral ul li a#menuLateral.topo { /* Definindo uma borda arredondada específica para o primeiro link */
+	border-radius: 10px 10px 0px 0px;
+}
+
+div#lateral ul li a#menuLateral.bottom { /* Definindo uma borda arredondada específica para o último link */
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 0px;
+}
+
+div#lateral a#menuLateral:hover {
+	color: white;
+	background: rgba(0,0,0,.8);
+}
+
+div#lateral a#menuLateral.seta {
+	background-image: url("../images/seta.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+div#postagens { /* Fazendo um background para os links das postagens */
+	background-color: #aeaea4;
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+a#linkPostagens { /* Formatando o link específico para a lateral da página */
+	color: #d9dcdc;
+	background-color: rgba(0,0,0,.5);
+	padding: 5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#linkPostagens:hover {
+	background-color: #41413d;
+}
+
+a#linkPostagens:active {
+	color: #FF3030;
+}
+/* Fim da formatação da lateral da página */
+/* Formatação do rodapé */
+div#rodape {
+	margin-top: 10px;
+	clear: both; /* Faz com que o conteúdo do rodapé não seja mostrado na divisão do corpo e da lateral, e sim no final da página */
+	background-color: rgba(0,0,0,.8);
+	width: 100%;
+	height: 20px;
+	border-top: 1px solid #ccc;
+}
+
+div#rodape p {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+	padding: 1px;
+	text-indent: 0px;
+}
+/*Fim da formatação do rodapé*/

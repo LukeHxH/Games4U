@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* Início da formatação do corpo */
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 85% arial, hevetica, sans-serif; /* Definindo a fonte do body */
+	text-align: justify; /* Deixando o texto justificado */
+	color: #333; /* Definindo a cor do body */
+	background: #ccc; /* Definindo o plano de fundo do body */
+}
+/* Fim da formatação do corpo */
+/* Início da formatação do container */
+div#container {
+	width: 1000px;
+	background: #fff;
+	margin: 0px auto 0px auto;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* Definindo uma sombra ao container */
+}
+/* Fim da formatação do container */
+/* Formatação da tabela de dicas */
+table#tableDicas {
+	width: 750px;
+	background-color: rgba(0,0,0,.1); /* Definindo um background para a tabela */
+	border-spacing: 0px; /* Os espaços entre as bordas da tabela é 0 */
+}
+
+table#tableDicas td#dicas {
+	color: white;
+	font-weight: bold;  Deixando o texto em negrito
+	font-size: 12pt;
+	text-align: center;
+	background-color: #606060;
+	padding: 5px;
+}
+
+table#tableDicas td.imagem {
+	width: 300px;
+	text-align: right;
+}
+
+table#tableDicas td.descricao {
+	text-align: left;
+}
+/* Fim da formatação da tabela de dicas */
+/*  Formatação do jogo da página */
+div#jogo {
+	margin-top: 0px
+	display: block;
+	width: 750px;
+	border: 1px solid #ccc; /* Definindo bordas */
+	border-radius: 10px 10px 10px 10px; /* Definindo bordas arredondadas */
+	float: right; /* Faz o corpo da página ser mostrado no lado direito */
+	padding: 15px;
+	margin-bottom: 10px;
+}
+/* Fim da formatação do jogo da página */
+/* Formatação para o iframe contido na página*/
+iframe#framePage {
+	margin: 0px;
+	padding: 0px;
+	width: 750px;
+	height: 40px;
+	border: none;
+}
+/* Fim da formatação para o iframe contido na página */
+
+p#titleForm { /* Formatação do título do formulário da página de jogos (o de avalização dos jogos) */
+	color: white;
+	background: rgba(0,0,0,0.8); /* Definindo um fundo com transparência */
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+div#divForm { /* Formatação do div em que está contido o formulário */
+	background: rgba(0,0,0,0.1); 
+	border-right: 2px solid rgba(0,0,0,0.8);
+	border-left: 2px solid rgba(0,0,0,0.8);
+	border-bottom: 2px solid rgba(0,0,0,0.8);
+}
+
+/* Formatação dos radio buttons da página */
+label.labelCheck {
+	font-size: 1.5em;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; /* Definindo uma fonte específica para os labels */
+	color: gray;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+input[type=radio] {
+	display: none; /* Fazendo o padrão do radio não ser exibido ao usuário */
+}
+
+input[type=radio] + label#labelCheck {
+	cursor: pointer; /* Fazendo o cursor do mouse mudar ao passar o mesmo por cima do label */
+}
+
+label.labelCheck:before { /* Uso de 'before' para adicionar um pseudo elemento à página (o botão de radio personalizado) */
+	content: '';
+	background: white;
+	border: 2px solid gray;
+	border-radius: 10px;
+	display: inline-block; /* Fazendo-o se comportar como um inline-block, pois só assim ganha um aspecto arredondado */
+	margin-right: 5px;
+	text-align: center;
+	text-shadow: 2px 1px 1px rgba(0,0,0,.5);
+	vertical-align: middle; /* Deixando o nome do label alinhado ao radio button ao lado */
+	height: 25px;
+	width: 25px;
+	transition: all 0.2s; /* colocando uma transição para todos os atributos quando o usuário selecionar ua opção */
+}
+
+input[type="radio"]:checked + label.labelCheck:before {
+	content: '✔'; /* Utilização do content para o uso do símbolo ✔ ao clicar */
+	font-size:  17px;
+	color: white;
+	background: gray;
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	margin: 0 0 10px 0;
+	padding: 4px 7px;
+	color: white;
+	background: rgba(0,0,0,.3); /* definindo um background com transparência */
+	border: 0px;
+	position: relative; /* Definição da posição 'relative' para alterar um pouquinho o top em relação a sua posição original */
+	top: 10px;
+	width: 100px;
+	font-weight: bold;
+	border-bottom: 2px double gray;
+	cursor: pointer; /* Fazendo o mouse mudar ao passá-lo por cima */
+	transition: all 0.2s; /* colocando uma transição para todos os atributos quando o usuário passar o mouse por cima */
+}
+
+input[type="submit"]:hover {
+	background: white;
+	color: gray;
+	border-bottom: 2px double rgba(0,0,0,.3);
+}
+
+input[type="submit"]:focus {
+	outline: 0;
+}
+
+/* Fim da formatação dos radio buttons da página */
+
+/* Formatação da lateral */
+div#lateral {
+	display: block; /* Faz a lateral da página ser tratado como um bloco */
+	margin-top: 0px;
+	width: 180px;
+	height: 400px;
+	padding: 12px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	float: left; /* Faz a lateral da página ser mostrada no lado direito */
+}
+
+div#lateral ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 12pt;
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 2px 2px 0px rgba(0,0,0,.5); /* Definindo uma sombra */
+}
+
+div#lateral ul li {
+	position: relative;
+	text-align: center;
+}
+
+div#lateral li ul {
+	display: none;
+	position: absolute;
+	left: 269px;
+	top: -2px;
+}
+
+div#lateral ul li a {
+	display: block;
+	text-decoration: none;
+	color: #DCDCDC;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #8B8682;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	transition: background-color 0.5s; /* Aplica uma transição, quando o mouse é passado por cima do link */
+}
+
+div#lateral a:hover {
+	color: white;
+	background: black;
+}
+
+div#lateral a.seta {
+	background-image: url("../images/voltar.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+/* Fim da formatação da lateral da página */
+/* Formatação do rodapé */
+div#rodape {
+	margin-top: 10px;
+	clear: both; /* Faz com que o conteúdo do rodapé não seja mostrado na divisão do corpo e da lateral, e sim no final da página */
+	background-color: rgba(0,0,0,.8);
+	width: 100%;
+	height: 20px;
+	border-top: 1px solid #ccc;
+}
+
+div#rodape p {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+	padding: 1px;
+	text-indent: 0px;
+}
+/* Fim da formatação do rodapé */

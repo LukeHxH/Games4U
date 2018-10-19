@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Enquete: Qual o seu jogo do site favorito?</title>
+		<link rel="stylesheet" type="text/css" href="../css/estiloenquete.css"/>
+		<script type="text/javascript" src="../javascript/scriptEnquete.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="corpo">
+				<div id="divIframe">
+					<iframe name="framePage" id="framePage" scrolling="no" src=""></iframe>
+				</div>
+				<div class="divFormulario">
+					<form name="formLogin" action="submetido.html" target="framePage" method="post" onsubmit="return validarEnquete()" onreset="limparSpan()">
+						<p align="left">Quais os melhores jogos do site?</p>
+						<p>
+							<textarea id="txtArea" name="txtArea" rows="10" cols="47"></textarea>
+						</p>
+						<p class="submit">
+							<button type="submit" class="buttonSubmit"></button>
+						</p>
+						<p class="reset">
+							<button type="reset" class="buttonReset"></button>
+						</p>
+						<span id="msg"></span>
+					</form>
+				</div>
+				<p align="center"><b>Veja abaixo os jogos do site:</b></p>
+				<div id="divtable">
+					<table id="tabelaJogos"> <!-- Início da tabela -->
+					<tr>
+						<th>Jogo</th>
+						<th>Gênero</th>
+						<th>Descrição</th>
+						<th>Imagem</th>
+					</tr>
+					<tr>
+						<td>1 on 1 Soccer</td>
+						<td>Esportes</td>
+						<td>Partidas de futebol simples e divertidas entre seleções.</td>
+						<td><img src="../images/1-on-1-soccer.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>1 on 1 Soccer Brasil</td>
+						<td>Esportes</td>
+						<td>É plena Copa do Mundo de 2014, realizada no Brasil! Dispute esse torneio, desafiando as seleções e desbloqueando jogadores a cada vitória!</td>
+						<td><img src="../images/1-on-1-soccer-brazil.gif" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Bob Esponja Delivery Dilemma</td>
+						<td>Plataforma</td>
+						<td>O Sr. Sirigueijo pede ao Bob Esponja para que traga os ingredientes do hambúrguer de siri. Ajude o Bob Esponja a entregar todos os ingredientes ao restaurante antes que o tempo termine e sem bater muito o veículo, desviando de diversos outros carros no trânsito e acelerando sempre que possível para chegar rapidamente.</td>
+						<td><img src="../images/spongebob.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Feudalism</td>
+						<td>RPG</td>
+						<td>Torne-se o grande imperador de uma terra que terá de ser dominada por sua força. Neste jogo, torne-se um mestre da arte da guerra!</td>
+						<td><img src="../images/feudalism.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Haunt the House</td>
+						<td>Aventura</td>
+						<td>Ajude esta entidade fantasmagórica e fofa (!) a assustar todos os invasores da casa, tomando cuidado para não fazê-los pular pela janela de tanto medo!</td>
+						<td><img src="../images/haunt.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Incursion 1</td>
+						<td>Tower Defense</td>
+						<td>Incursion é um jogo de estratégia, onde o reino da luz foi coberto pela escuridão, e a sua missão é defendê-lo contra os soldados inimigos. Você tem que treinar seus defensores e colocá-los em locais estratégicos ao longo da estrada para parar os ataques inimigos.</td>
+						<td><img src="../images/incursionImage1.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Incursion 2</td>
+						<td>Tower Defense</td>
+						<td>A legião das trevas continua seu ataque massivo sem dar trégua e, neste tempo difícil, um herói surgiu para liderar à todos. Defenda sua base com valentia e submeta as forças inimigas à derrota!</td>
+						<td><img src="../images/incursionImage2.jpeg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Planet Racers</td>
+						<td>Corrida</td>
+						<td>Corra, equipe, ganhe! Torne-se o novo rei do universo de Planet Racers desafiando outros corredores e ganhando reputação e dinheiro suficientes para desafiar o atual rei.</td>
+						<td><img src="../images/planet.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+					<tr>
+						<td>Trollface Quest</td>
+						<td>Comédia/Puzzle</td>
+						<td>Será que você consegue cumprir os desafios? ( ͡° ͜ʖ ͡°)</td>
+						<td><img src="../images/trollface.jpg" style="width: 150px; height: 100px;"/></td>
+					</tr>
+				</table> <!-- Fim da tabela -->
+				</div>
+			</div>
+			<div id="lateral">
+				<ul>
+					<li><a class="seta" href="index.html">Home Page</a></li>
+				</ul>
+			</div>
+			<div id="rodape">
+				<p>Copyright &copy Games 4U - 2015</p>
+			</div>
+		<div>
+	</body>
+</html>
